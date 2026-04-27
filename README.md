@@ -103,4 +103,46 @@ aa.jpg → Requires a passphrase
 
 so some of them not in correct format and 1 of them are encrypted
 
+<img width="1141" height="764" alt="image" src="https://github.com/user-attachments/assets/0b5ec0b2-ce52-459e-8f8a-b530ff4603a2" />
+
+we fixed the header inside leave.me.alone.png using hexed.it it stated the password for aa.jpg 
+
+<img width="648" height="444" alt="image" src="https://github.com/user-attachments/assets/21a7d389-f45a-49c0-ae3a-30f36997d078" />
+
+we get information now we go to ssh
+
+Target: ssh slade@10.49.154.242 password: M3tahuman
+
+<img width="784" height="549" alt="image" src="https://github.com/user-attachments/assets/b8557c7e-6a44-4422-a275-59f20e9c3233" />
+
+we in slade ssh now try ls
+
+<img width="400" height="92" alt="image" src="https://github.com/user-attachments/assets/5fbdc515-05ba-42ab-b7a5-a91a9946670f" />
+
+we found the first flag
+
+now we check for other user privilege 
+
+sudo -l
+
+<img width="676" height="158" alt="image" src="https://github.com/user-attachments/assets/d79a467f-0af7-4215-b7de-502b5a137e7b" />
+
+now we exploit using 
+
+"sudo pkexec /bin/bash"
+
+<img width="760" height="495" alt="image" src="https://github.com/user-attachments/assets/8e12dcee-ced0-4905-820a-a212f90d97e6" />
+
+finally we get the root and the last flag at flag.txt using command ls -la
+
+
+
+
+
+
+
+
+
+
+
 
